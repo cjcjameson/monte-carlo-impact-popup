@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Monte Carlo Impact 2023 Ad Blocker",
+  "version": "0.1",
+  "description": "An extension to block the ad for IMPACT 2023",
+  "default_locale": "en",
+  "icons": {
+    "16": "billybeane.jpg"
+  },
+  "author": "cjameson@montecarlodata.com",
+
+  "content_scripts": [
+    {
+      "matches": ["https://*.getmontecarlo.com/*"],
+      "js": ["block_impact_ad.js"],
+    }
+  ],
+}
